@@ -4,10 +4,12 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Errorpage from './pages/Errorpage';
+import Navbar from './pages/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
         <Routes>
           <Route path ='/' element={<Homepage/>}/>
           <Route path='/about' element={<About/>}/>
