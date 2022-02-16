@@ -12,15 +12,17 @@ function Navigationbar() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                 <Navbar.Collapse id='responsive-navbar-nav' className='collapse' variant='outline-success'>
-                    <Nav className='me-auto' > 
-                        <Nav.Link href='/'>Home</Nav.Link>
-                        <Nav.Link href='/about'>About Us</Nav.Link>
-                        <NavDropdown title='Dropdown' id='collasible-nav-dropdown'>
-                        <NavDropdown.Item href='/info'>Information</NavDropdown.Item>
-                        <NavDropdown.Item href='/news'>News</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href='/services'>Services</Nav.Link>
-                        <Nav.Link eventKey={2} href='/about'>About</Nav.Link>
+                    <Nav className='me-auto' >
+                        <div>
+                            <Nav.Link href='/'>Home</Nav.Link>
+                            <Nav.Link href='/about'>About Us</Nav.Link>
+                            <NavDropdown title='Dropdown' id='collasible-nav-dropdown'>
+                            <NavDropdown.Item href='/info'>Information</NavDropdown.Item>
+                            <NavDropdown.Item href='/news'>News</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href='/services'>Services</Nav.Link>
+                            <Nav.Link eventKey={2} href='/about'>About</Nav.Link>
+                        </div> 
                     </Nav>
                 </Navbar.Collapse>
             </Container>
