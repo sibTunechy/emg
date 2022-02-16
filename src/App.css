@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.collapse {
+  font-size: 23px;
+  font-weight:bolder;
+  display: flex;
+  align-items:flex-end;
+  justify-content:space-around;
+}
+/* .collapse:hover {
+  color: blue;
+} */
+
 
 .App-logo {
   height: 40vmin;
