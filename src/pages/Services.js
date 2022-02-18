@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Services = () => {
+function Services() {
   return (
-    <div>Services</div>
+    <div>Services that we offer</div>
   )
 }
 

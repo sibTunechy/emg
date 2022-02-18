@@ -1,29 +1,29 @@
 import React from 'react';
 import logo from '../logo/LogoMakr-7VVBa6.png';
-import { MenuList } from '../components/MenuList';
+import { MenuList } from '../components/NavList';
 
-const Navbar = () => {
-    const menuList = MenuList.map(({url,title}) => {
-        return (
-            <li>
-                <a href={url}>{title}</a>
-            </li>
-        )
-    })
+// const Navbar = () => {
+//     const menuList = MenuList.map(({url,title}) => {
+//         return (
+//             <li>
+//                 <a href={url}>{title}</a>
+//             </li>
+//         )
+//     })
 
-    return (
-        <nav>
-            <div className='logo'>
-                <img  alt='logo' src={logo}/>
-                <a href='/'></a>
-            </div>
-            <ul className='menu-list'>
+//     return (
+//         <nav>
+//             <div className='logo'>
+//                 <img  alt='logo' src={logo}/>
+//                 <a href='/'></a>
+//             </div>
+//             <ul className='menu-list'>
 
-            </ul>
+//             </ul>
 
-        </nav>
-    )
-};
+//         </nav>
+//     )
+// };
 
 
 export default Navbar;

@@ -1,4 +1,4 @@
-export const MenuList = [
+export const NavList = [
     {
         title: 'Home',
         url: '/'
@@ -15,8 +15,8 @@ export const MenuList = [
         title: 'Services',
         url: '/services'
     },
-    {
-        title: 'Error Page',
-        url: '*'
-    }
+    // {
+    //     title: '',
+    //     url: '*'
+    // }
 ];
