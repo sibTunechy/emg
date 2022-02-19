@@ -1,16 +1,34 @@
 import React from 'react'
 // import {Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-// import logo from '../logo/LogoMakr-7VVBa6.png';
+import Logo from '../logo/LogoMakr-7VVBa6.png';
+import {FaBars} from 'react-icons/fa';
+import '../components/Navbar.css'
 // import { NavList } from '../components/NavList';
 // import '../App.css'
 
+const Navbar = () => {
+    return (
+        <div className='navbar'>
+            <div className='logo'>
+                <img src={Logo} alt='logo'/>
+            </div>
+            <ul className='nav-menu'>
+                <li className='nav-item'><a href='/'>Home</a></li>
+                <li className='nav-item'><a href='/about'>About</a></li>
+                <li className='nav-item'><a href='/contact'>Contact</a></li>
+                <li className='nav-item'><a href='/services'>Services</a></li>
+            </ul>
+            <div className='hamburger'>
+                <FaBars size={30} style={{color: '#f8f8f8'}}/>
+            </div>
+
+        </div>
+    )
+}
 
 
 
-
-
-
-export default Navigationbar;
+export default Navbar;
 
 
 

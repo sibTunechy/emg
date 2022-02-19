@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500&family=Roboto+Slab&display=swap');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    color: #333;
+    font-family: 'Roboto-Serif', sans-serif;
+    line-height: 1.5;
+}
+
 :root {
-    --primary: 
+    --primary: #6948ff;
+    --secondary: #553bcb;
+    --darkgrey: #22262a;
+    --lightgrey: #d3d3d3;
+    --grey: #808080;
+    --white: #f8f8f8;
+}
+.primary-color {
+    color: var(--primary);
 }
