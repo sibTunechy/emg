@@ -1,25 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import {Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import Logo from '../logo/LogoMakr-7VVBa6.png';
-import {FaBars} from 'react-icons/fa';
+import {FaBars, FaTimes} from 'react-icons/fa';
 import '../components/Navbar.css'
 // import { NavList } from '../components/NavList';
 // import '../App.css'
 
 const Navbar = () => {
+    const [clickhamburger, setClickhamburger] = useState(false);
+
+    const handleClick = () => setClickhamburger(!clickhamburger)
+
     return (
         <div className='navbar'>
             <div className='logo'>
                 <img src={Logo} alt='logo'/>
             </div>
-            <ul className='nav-menu'>
+            <ul className={clickhamburger ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'><a href='/'>Home</a></li>
                 <li className='nav-item'><a href='/about'>About</a></li>
                 <li className='nav-item'><a href='/contact'>Contact</a></li>
                 <li className='nav-item'><a href='/services'>Services</a></li>
             </ul>
-            <div className='hamburger'>
-                <FaBars size={30} style={{color: '#f8f8f8'}}/>
+            <div className='hamburger' onClick={handleClick}>
+                {clickhamburger ? (<FaTimes size={50} style={{color: '#f8f8f8'}}/>) : (<FaBars size={50} style={{color: '#f8f8f8'}}/>) }                
             </div>
 
         </div>
