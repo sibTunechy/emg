@@ -8,7 +8,7 @@
     background-color: var(--lightgrey);
 }
 .nav-menu {
-    display: flex;  
+    display: flex;
 }
 .navbar img {
     width: 150px;
@@ -32,10 +32,10 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        transition: 0.4s;
+        transition: 0.7s;
     }
 
-    .nav-item.active {
+    .nav-menu.active {
         left: 0;
     }
 

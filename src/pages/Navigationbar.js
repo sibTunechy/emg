@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-// import {Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import {Link} from 'react-router-dom';
 import Logo from '../logo/LogoMakr-7VVBa6.png';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import '../components/Navbar.css'
@@ -14,7 +14,9 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='logo'>
-                <img src={Logo} alt='logo'/>
+                <Link to='/'>
+                    <img src={Logo} alt='logo'/>
+                </Link>
             </div>
             <ul className={clickhamburger ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'><a href='/'>Home</a></li>

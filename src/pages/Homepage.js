@@ -1,8 +1,16 @@
 import React from 'react'
+import '../components/Homepage.css';
 
 function Homepage() {
   return (
-    <div>This page is called the Home Page</div>
+    <div>
+      <section className=''>
+        <div className='circle'>
+
+        </div>
+
+      </section>
+    </div>
   )
 }
 
