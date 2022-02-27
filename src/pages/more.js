@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../'
 
-function more() {
+function morechanges () {
   return (
-    <div>more</div>
+    <div>more changes expected here</div>
     
   )
 }
