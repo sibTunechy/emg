@@ -8,4 +8,4 @@ function morechanges () {
   )
 }
 
-export default more
+export default morechanges;
